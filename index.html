@@ -1,19 +1,3580 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MAXSEM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
-  
+
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <div class="menu__top">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo.jpg" alt="логотип">
+          </a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Оплата</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Опт</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="menu__user">
+            <li class="menu__user-item">
+              <button class="menu__user-btn" type="button">
+                <img class="menu__img" src="images/heart.svg" alt="">
+              </button>
+            </li>
+            <li class="menu__user-item">
+              <button class="menu__user-btn" type="button">
+                <img class="menu__img" src="images/user.svg" alt="">
+              </button>
+            </li>
+            <li class="menu__user-item">
+              <button class="menu__user-btn" type="button">
+                <img class="menu__img" src="images/basket.svg" alt="">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul class="menu-categories">
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Салюты</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Миномёты</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Римские свечи</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Ракеты</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Фонтаны</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Цветной дым</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link" href="#">Хлопушки</a>
+          </li>
+          <li class="menu-categories__item">
+            <a class="menu-categories__link menu-categories__link--sale" href="#">Разное</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="promo">
+      <h2 class="sr-only">промо</h2>
+      <div class="container">
+        <div class="promo__inner">
+          <ul class="promo__list">
+            <li class="promo__item">
+              <img class="promo__img" src="images/promo-content/3.webp" alt="sale">
+            </li>
+            <li class="promo__item">
+              <img class="promo__img" src="images/promo-content/2.webp" alt="holiday">
+            </li>
+            <li class="promo__item">
+              <img class="promo__img" src="images/promo-content/4.jpg" alt="fireworks">
+            </li>
+          </ul>
+          <a class="promo__link promo-item" href="#">
+            <div class="promo-item__top">
+              <span class="promo-item__info">акция</span>
+              <div class="promo-item__price">
+                <span class="promo-item__new-price price">46 лей</span>
+                <span class="promo-item__old-price">49 лей</span>
+              </div>
+            </div>
+            <img class="promo-item__img" src="images/fum-color.jpeg" alt="fum color">
+            <h3 class="promo-item__title">
+              Fum Colorat
+            </h3>
+            <p class="promo-item__text">
+              Акция действует до
+              <span>31.08.2024</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2 class="title categories__title">
+          Категории
+        </h2>
+        <search class="categories__search">
+          <form class="categories__form" action="#">
+            <input class="categories__input" type="search" placeholder="Введите название товара">
+            <button class="categories__btn" type="submit">Искать</button>
+          </form>
+        </search>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a class="categories__inner" href="#">
+              <div class="categories__info">
+                <h3 class="categories__title">
+                  Салюты
+                </h3>
+                <span class="categories__link">Подробнее</span>
+              </div>
+              <img class="categories__img" src="images/categories/1.jpg" alt="">
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__inner" href="#">
+              <div class="categories__info">
+                <h3 class="categories__title">
+                  Римские свечи
+                </h3>
+                <span class="categories__link">Подробнее</span>
+              </div>
+              <img class="categories__img" src="images/categories/2.webp" alt="">
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__inner" href="#">
+              <div class="categories__info">
+                <h3 class="categories__title">
+                  Ракеты
+                </h3>
+                <span class="categories__link">Подробнее</span>
+              </div>
+              <img class="categories__img" src="images/categories/3.avif" alt="">
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__inner" href="#">
+              <div class="categories__info">
+                <h3 class="categories__title">
+                  Фонтаны
+                </h3>
+                <span class="categories__link">Подробнее</span>
+              </div>
+              <img class="categories__img" src="images/categories/4.webp" alt="">
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__inner" href="#">
+              <div class="categories__info">
+                <h3 class="categories__title">
+                  Цветной дым
+                </h3>
+                <span class="categories__link">Подробнее</span>
+              </div>
+              <img class="categories__img" src="images/categories/5.jpg" alt="">
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__inner" href="#">
+              <div class="categories__info">
+                <h3 class="categories__title">
+                  Хлопушки
+                </h3>
+                <span class="categories__link">Подробнее</span>
+              </div>
+              <img class="categories__img" src="images/categories/6.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title title">
+          Популярные товары
+        </h2>
+        <div class="tabs products__tabs">
+          <a class="tab products__tab tab--active" href="#product-tab-1">Салюты</a>
+          <a class="tab products__tab" href="#product-tab-2">Римские свечи</a>
+          <a class="tab products__tab" href="#product-tab-3">Ракеты</a>
+          <a class="tab products__tab" href="#product-tab-4">Фонтаны</a>
+          <a class="tab products__tab" href="#product-tab-5">Цветной дым</a>
+          <a class="tab products__tab" href="#product-tab-6">Хлопушки</a>
+        </div>
+        <div class="tabs-container products__container">
+          <div id="product-tab-1" class="tabs-content product__content tabs-content--active">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="product-tab-2" class="tabs-content product__content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="product-tab-3" class="tabs-content product__content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="product-tab-4" class="tabs-content product__content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="product-tab-5" class="tabs-content product__content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="product-tab-6" class="tabs-content product__content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/1.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Absolute Zero
+                    </h4>
+                    <p class="product-item__price price">1978 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/2.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Angry Tiger
+                    </h4>
+                    <p class="product-item__price price">324 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/3.png" alt="product">
+                    <h4 class="product-item__title">
+                      Fum Colorat
+                    </h4>
+                    <p class="product-item__price price">145 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/4.png" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__more">
+          <a class="product__more-link" href="#">Показать ещё</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <h2 class="sr-only">promo</h2>
+      <div class="container">
+        <img class="banner__img" width="100%" height="300px" src="images/banner.webp" alt="">
+      </div>
+    </section>
+
+    <section class="products products-section">
+      <div class="container">
+        <h2 class="products__title title">
+          С этим товаром покупают
+        </h2>
+        <div class="tabs products__tabs">
+          <a class="tab products__tab tab--active" href="#popular-tab-1">Салюты</a>
+          <a class="tab products__tab" href="#popular-tab-2">Римские свечи</a>
+          <a class="tab products__tab" href="#popular-tab-3">Ракеты</a>
+          <a class="tab products__tab" href="#popular-tab-4">Фонтаны</a>
+          <a class="tab products__tab" href="#popular-tab-5">Цветной дым</a>
+          <a class="tab products__tab" href="#popular-tab-6">Хлопушки</a>
+        </div>
+        <div class="tabs-container products__container">
+          <div id="popular-tab-1" class="tabs-content product__content tabs-content--active">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="popular-tab-2" class="tabs-content product__content tabs-content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="popular-tab-3" class="tabs-content product__content tabs-content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="popular-tab-4" class="tabs-content product__content tabs-content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="popular-tab-5" class="tabs-content product__content tabs-content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="popular-tab-6" class="tabs-content product__content tabs-content">
+            <div class="product__slider">
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/5.png" alt="product">
+                    <h4 class="product-item__title">
+                      Visionary
+                    </h4>
+                    <p class="product-item__price price">194 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/6.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Тортовая свеча
+                    </h4>
+                    <p class="product-item__price price">26 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/7.webp" alt="product">
+                    <h4 class="product-item__title">
+                      Stroboscop Big
+                    </h4>
+                    <p class="product-item__price price">16 лей</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="product__slider-item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img class="product-item__basket-img" src="images/basket-white.svg" alt="basket">
+                  </button>
+                  <a class="product-item__notify-link" href="#">Сообщить о поступлении</a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">
+                      посмотреть товар
+                    </p>
+                    <img class="product-item__img" src="images/products/8.jpg" alt="product">
+                    <h4 class="product-item__title">
+                      Red Devil
+                    </h4>
+                    <p class="product-item__price price">68 000 ₽</p>
+                    <p class="product-item__notify-text">
+                      нет в наличии
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__box">
+          <h2 class="footer__name title">
+            Поиск по сайту
+          </h2>
+          <search class="footer__search">
+            <form class="footer__form" action="#">
+              <input class="footer__input" type="search" placeholder="Поиск">
+              <button class="footer__btn" type="submit">Искать</button>
+            </form>
+          </search>
+        </div>
+        <ul class="footer__items">
+          <li class="footer__item">
+            <h3 class="footer__title">
+              Информация
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__elem">
+                <a class="footer__link" href="#">О компании</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Оплата</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Опт</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__title">
+              Категории
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Салюты</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Миномёты</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Римские свечи</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Ракеты</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Фонтаны</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Хлопушки</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Разное</a>
+              </li>
+              <li class="footer__elem">
+                <a class="footer__link" href="#">Цветной дым</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/instagram.svg" alt="">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/vk.svg" alt="">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/facebook.svg" alt="">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/youtube.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__logo">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="images/logo.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
